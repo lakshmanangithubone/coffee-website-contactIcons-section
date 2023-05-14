@@ -117,6 +117,10 @@ body {
   .contactInfoContainer {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .contactInfo {
+    margin: 10px 0;
+  }
 }
 
 /* media queries for screen size less than 576px */
