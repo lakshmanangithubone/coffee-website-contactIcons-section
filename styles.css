@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kaushan+Script&family=Lato:wght@400;700&family=Merienda:wght@400;600;800;900&family=Montserrat:wght@500&family=Nunito+Sans:wght@400;600&family=Open+Sans&family=Poppins:wght@500&family=Raleway:wght@300;400;500;600;700;800;900&family=Source+Serif+Pro&family=Ubuntu:wght@500&display=swap");
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Merienda', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Source Serif Pro', serif;
+font-family: 'Ubuntu', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-text-color: gray;
+  --secondary-text-color: black;
+  --third-text-color: white;
+  --primary-background-color: burlywood;
+}
+
+body {
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.contactIcons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfoContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: minmax(100px, auto);
+  gap: 30px;
+  align-items: center;
+  padding: 0px 10vw;
+  margin: 20px 0;
+}
+
+.contactInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.contactInfo > * {
+  margin: 5px 0;
+}
+
+.contactInfoHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contactInfoImage i {
+  background-color: var(--primary-background-color);
+  color: var(--third-text-color);
+  font-size: 35px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.contactInfoBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  width: 100%;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 10px;
+  padding: 20px 0;
+}
+
+.copyright p a {
+  text-decoration: none;
+  color: var(--primary-background-color);
+}
+
+.copyright p a:hover {
+  text-decoration: underline;
+}
+
+/* media queries for screen size less than 992px */
+
+@media (max-width: 992px) {
+  .contactInfoContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* media queries for screen size less than 768px */
+
+@media (max-width: 768px) {
+  .contactInfoContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* media queries for screen size less than 576px */
+
+@media (max-width: 576px) {
+  .contactInfoContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
